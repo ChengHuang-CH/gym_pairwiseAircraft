@@ -1,1 +1,1 @@
-from gym_pairwiseAircraft.envs.pairwiseAircraft import pairwiseAircraftEnv
+from gym_pairwiseAircraft.envs.pairwiseAircraft_env import pairwiseAircraftEnv

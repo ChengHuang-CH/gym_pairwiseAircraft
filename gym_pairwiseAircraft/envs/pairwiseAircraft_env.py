@@ -200,7 +200,7 @@ class pairwiseAircraftEnv(gym.Env):
         ownerQuatenion = p.getQuaternionFromEuler([0, 0,
                                                    90 / 180 * 3.14])  # rad
         self.owner = p.loadURDF(
-            "H:/LocalGitFIles/gym_ATM/gym_ATM/urdfFile/owner.urdf",
+            parentdir+"/gym_pairwiseaircraft/urdfFile/owner.urdf",
             basePosition=[ownerX, ownerY, ownerZ],
             baseOrientation=ownerQuatenion,
             globalScaling=2)
@@ -214,7 +214,7 @@ class pairwiseAircraftEnv(gym.Env):
         intruderQuaternion = p.getQuaternionFromEuler(
             [0, 0, -151 / 180 * 3.14])  # rad
         self.intruder = p.loadURDF(
-            "H:/LocalGitFIles/gym_ATM/gym_ATM/urdfFile/intruder.urdf",
+            parentdir+"/gym_pairwiseaircraft/urdfFile/intruder.urdf",
             basePosition=[intruderX, intruderY, intruderZ],
             baseOrientation=intruderQuaternion,
             globalScaling=2)
